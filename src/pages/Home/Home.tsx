@@ -6,7 +6,7 @@ const Fade = require("react-reveal/Fade");
 
 export default function Home() {
   return (
-    <section className="bg-base-100 body-font py-4 md:py-16">
+    <section className="bg-base-100 body-font md:py-16 pb-28 md:pb-0">
       <div className="hero bg-base-100">
         <div className="hero-content flex-col justify-between lg:flex-row-reverse">
           <Fade right distance="20px">

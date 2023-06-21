@@ -5,6 +5,8 @@ import NotFound from './shared/NotFound/NotFound';
 import Preloader from './shared/Preloader/Preloader';
 import AlQuran from './pages/AlQuran/AlQuran';
 import Surah from './pages/Surah/Surah';
+import Developer from './pages/Developer/Developer';
+import BottomNav from './shared/Navbar/BottomNav';
 
 const router = createBrowserRouter(
   [
@@ -14,11 +16,27 @@ const router = createBrowserRouter(
     },
     {
       path: "/alQuran",
-      element: <AlQuran />,
+      element:
+        <>
+          <BottomNav />
+          <AlQuran />
+        </>,
     },
     {
       path: "/alQuran/:surah",
-      element: <Surah />,
+      element:
+        <>
+          <BottomNav />
+          <Surah />
+        </>,
+    },
+    {
+      path: "/dev",
+      element:
+        <>
+          <BottomNav />
+          <Developer />
+        </>,
     },
     {
       path: "*",

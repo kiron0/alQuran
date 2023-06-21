@@ -1,0 +1,19 @@
+.socialLinks .website {
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.socialLinks .messenger {
+  background: linear-gradient(45deg, #0695ff, #a334fa, #ff6968);
+  box-shadow: 0 4px 30px rgba(255, 105, 104, 0.5);
+}
+
+.socialLinks .github {
+  background: linear-gradient(45deg, #333333, #626b73);
+  box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.socialLinks .telegram {
+  background: linear-gradient(45deg, #0088cc, #0088cc);
+  box-shadow: 0 4px 30px rgba(0, 136, 204, 0.5);
+}

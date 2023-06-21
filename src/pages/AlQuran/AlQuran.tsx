@@ -9,11 +9,11 @@ export default function AlQuran() {
   const navigate = useNavigate();
 
   return (
-    <div className='pb-10'>
+    <div className='pb-28 md:pb-10'>
       <h1 className='text-center py-10 px-5 text-xl md:text-2xl font-bold md:px-0'>
         আল-কোরআনের সূরা সমূহের তালিকা ও বিস্তারিত তথ্য (<span className='font-SutonnyMJ text-2xl'>{alQuran.length}</span> টি সূরা)
       </h1>
-      <button onClick={() => navigate("/")} className='glass py-2 px-4 rounded-xl flex justify-center items-center mx-auto text-black mb-8 gap-2'><i className='bx bx-home-heart text-xl'></i>Go Home</button>
+      <button onClick={() => navigate("/")} className='hidden md:flex glass py-2 px-4 rounded-xl justify-center items-center mx-auto text-black mb-8 gap-2'><i className='bx bx-home-heart text-xl'></i>Go Home</button>
       <div className='grid grid-cols-1 gap-5 px-3 md:px-0 w-full md:w-2/3 lg:w-1/2 mx-auto'>
         {
           alQuran.map((surah, index) => {

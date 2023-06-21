@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/logo.png'
 import { RiMenu4Fill } from 'react-icons/ri'
 
 export default function Navbar() {
@@ -11,16 +11,16 @@ export default function Navbar() {
                                                   isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center" : "py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
                                         }>সূরা সমূহ</NavLink>
                               </li>
-                              {/* <li className='lg:hidden py-2 lg:py-0'>
+                              <li className='md:hidden py-2 lg:py-0'>
                                         <NavLink to="/dev" className={({ isActive }) =>
-                                                  isActive ? "text-white border p-4 rounded-md font-semibold uppercase flex justify-center items-center bg-primary hover:bg-primary hover:text-white" : "p-4 rounded-md font-semibold border text-black uppercase flex justify-center items-center"
+                                                  isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center uppercase" : "uppercase py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
                                         }>Developer</NavLink>
-                              </li> */}
+                              </li>
                     </>
           )
 
           return (
-                    <div className="navbar glass sticky top-0 z-50 md:px-16 lg:px-32">
+                    <div className="navbar glass hidden md:flex sticky top-0 z-50 md:px-16 lg:px-32">
                               <div className="navbar-start">
                                         <div className="dropdown">
                                                   <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ export default function Navbar() {
                                         </ul>
                               </div>
                               <div className="navbar-end hidden md:flex">
-                                        <Link to="/dev" className="py-3 px-6 rounded-xl font-semibold glass hover:bg-primary hover:text-white duration-500 text-black">Developer</Link>
+                                        <Link to="/dev" className="py-3 px-6 rounded-xl font-semibold glass hover:bg-primary hover:text-white duration-500 text-black uppercase">Developer</Link>
                               </div>
                     </div>
           )

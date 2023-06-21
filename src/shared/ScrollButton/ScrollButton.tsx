@@ -23,7 +23,7 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <span className="scroll-btn fixed cursor-pointer text-black text-[2.5rem] w-100 z-[999] left-[84%] md:left-[91%] lg:left-[96%] bottom-[55px] md:bottom-[70px] h-[20px]">
+    <span className="scroll-btn fixed cursor-pointer text-black text-[2.5rem] w-100 z-[999] left-[84%] md:left-[91%] lg:left-[96%] bottom-[120px] md:bottom-[70px] h-[20px]">
       <BsArrowUpCircle
         className="hover:bg-black duration-500 hover:text-white rounded-full"
         onClick={scrollToTop}
