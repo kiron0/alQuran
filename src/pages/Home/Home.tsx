@@ -31,8 +31,7 @@ export default function Home() {
                 আসসালামু আলাইকুম,
               </h1>
               <p className="py-4 text-lg">
-                আমাদের এই ওয়েবসাইট এ আপনাকে স্বাগতম। এই ওয়েবসাইট এ
-                আপনি আল কোরআন এর সকল সূরা এবং তাফসীর পাবেন। আপনি চাইলে আপনার পছন্দের সূরা এবং তাফসীর পড়তে পারেন নিচের বাটন এ ক্লিক করে।
+                আমাদের এই অ্যাপ এ আপনাকে স্বাগতম। এই অ্যাপ এ আপনি আল-কোরআন এর সকল সূরা এবং তাফসীর পাবেন। আপনি চাইলে আপনার পছন্দের সূরা এবং তাফসীর পড়তে পারেন নিচের বাটন এ ক্লিক করে।
               </p>
               <div className='flex justify-center md:justify-start items-center mt-3'>
                 <Link to="/alQuran" className="glass py-2 px-8 text-black rounded-xl hover:bg-primary hover:text-white duration-500">
