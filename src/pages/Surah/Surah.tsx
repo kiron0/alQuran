@@ -56,11 +56,11 @@ export default function Surah() {
                                                                                 {
                                                                                           isLoaded && (
                                                                                                     surah.surahNo === surahNumber && surah.audio && (
-                                                                                                              <div className='glass duration-500 px-5 py-5 rounded-xl flex flex-col gap-5 justify-center items-center md:px-0 w-[93%] md:w-2/3 lg:w-1/2 mx-auto'>
-                                                                                                                        <audio id='myAudio' controls controlsList="nodownload noplaybackrate nofullscreen noremoteplayback" className=''>
+                                                                                                              <div className='glass duration-500 py-5 rounded-xl flex flex-col gap-5 justify-center items-center md:px-0 w-[93%] md:w-2/3 lg:w-1/2 mx-auto'>
+                                                                                                                        <audio id='myAudio' controls controlsList="nodownload noplaybackrate nofullscreen noremoteplayback" className='md:w-2/3 lg:w-1/2'>
                                                                                                                                   <source src={surah?.audio} type="audio/mpeg" />
                                                                                                                         </audio>
-                                                                                                                        <div className='w-2/3 md:w-1/3 lg:w-1/4 flex flex-col items-center gap-2'>
+                                                                                                                        <div className='w-3/4 md:w-1/2 lg:w-1/3 flex flex-col items-center gap-2'>
                                                                                                                                   <input type="range" min={0} max={100} value={volume} onChange={
                                                                                                                                             (e) => {
                                                                                                                                                       setVolume(parseInt(e.target.value));
