@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
-import { RiMenu4Fill } from 'react-icons/ri'
+import { CgMenuGridO } from 'react-icons/cg'
 
 export default function Navbar() {
           const NavMenus = (
@@ -24,7 +24,7 @@ export default function Navbar() {
                               <div className="navbar-start">
                                         <div className="dropdown">
                                                   <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                                            <RiMenu4Fill className="text-3xl" />
+                                                            <CgMenuGridO className="text-3xl" />
                                                   </label>
                                                   <ul tabIndex={0} className="menu menu-compact dropdown-content mt-4 p-2 shadow bg-base-100 rounded-box w-72">
                                                             {NavMenus}
@@ -38,7 +38,7 @@ export default function Navbar() {
                                         </ul>
                               </div>
                               <div className="navbar-end hidden md:flex">
-                                        <Link to="/dev" className="py-3 px-6 rounded-xl font-semibold glass hover:bg-primary hover:text-white duration-500 text-black uppercase">Developer</Link>
+                                        <Link to="/dev" className="py-3 px-6 rounded-xl glass hover:bg-primary hover:text-white duration-500 text-black">ডেভেলপার</Link>
                               </div>
                     </div>
           )

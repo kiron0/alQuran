@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { BsArrowUpCircle } from "react-icons/bs";
+import { BsArrowUpShort } from "react-icons/bs";
 
-const ScrollButton = () => {
+export default function ScrollButton() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -23,14 +23,12 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <span className="scroll-btn fixed cursor-pointer text-black text-[2.5rem] w-100 z-[999] left-[84%] md:left-[91%] lg:left-[96%] bottom-[120px] md:bottom-[70px] h-[20px]">
-      <BsArrowUpCircle
-        className="hover:bg-black duration-500 hover:text-white rounded-full"
+    <span className="fixed cursor-pointer text-white text-[2.5rem] w-full z-[999] left-[84%] md:left-[91%] lg:left-[96%] bottom-[125px] md:bottom-[70px] h-[20px]">
+      <BsArrowUpShort
+        className="bg-primary duration-500 glass rounded-tl-3xl rounded-br-3xl"
         onClick={scrollToTop}
         style={{ display: visible ? "inline" : "none" }}
       />
     </span>
   );
 };
-
-export default ScrollButton;

@@ -7,6 +7,7 @@ import ScrollButton from '../../shared/ScrollButton/ScrollButton';
 export default function AlQuran() {
   useScrollToTop();
   const navigate = useNavigate();
+  document.title = `সূরা সমূহ | Al Quran - আল কোরআন `;
 
   return (
     <div className='pb-28 md:pb-10'>
@@ -22,8 +23,8 @@ export default function AlQuran() {
                 <div className="collapse collapse-arrow join-item border border-base-300 rounded-xl py-2">
                   <input type="radio" name="my-accordion-4" />
                   <div className="collapse-title">
-                    <h1 className='text-lg font-bold capitalize flex items-center'>
-                      <span className='font-SutonnyMJ text-xl mb-2 md:mb-0'>{surah.surahNo}</span>. {surah.surahName} ({surah.surahArName})
+                    <h1 className='text-lg font-bold capitalize'>
+                      <span className='font-SutonnyMJ text-xl'>{surah.surahNo}</span>. {surah.surahName} ({surah.surahArName})
                     </h1>
                   </div>
                   <div className="collapse-content flex flex-col gap-1 select-none cursor-not-allowed">

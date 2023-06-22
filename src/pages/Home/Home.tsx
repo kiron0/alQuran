@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import bannerImg from "../../assets/logo.png";
+import Footer from '../../shared/Footer/Footer';
 
 const Fade = require("react-reveal/Fade");
 
 export default function Home() {
+  document.title = `হোম | Al Quran - আল কোরআন `;
+
   return (
-    <section className="bg-base-100 body-font md:py-16 pb-28 md:pb-0">
-      <div className="hero bg-base-100">
+    <section className="md:py-16 pb-20 md:pb-0">
+      <div className="hero">
         <div className="hero-content flex-col justify-between lg:flex-row-reverse">
           <Fade right distance="20px">
             <div className="w-full md:w-2/3 lg:w-1/3 rounded overflow-hidden lg:ml-6">
@@ -42,6 +45,7 @@ export default function Home() {
           </Fade>
         </div>
       </div>
+      <Footer />
     </section>
   )
 }
