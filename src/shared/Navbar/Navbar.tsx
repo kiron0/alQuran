@@ -11,10 +11,15 @@ export default function Navbar() {
                                                   isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center" : "py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
                                         }>সূরা সমূহ</NavLink>
                               </li>
-                              <li className='md:hidden py-2 lg:py-0'>
-                                        <NavLink to="/dev" className={({ isActive }) =>
-                                                  isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center uppercase" : "uppercase py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
-                                        }>Developer</NavLink>
+                              <li className='lg:mr-6 py-2 lg:py-0'>
+                                        <NavLink to="/hadith" className={({ isActive }) =>
+                                                  isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center" : "py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
+                                        }>হাদিস সমূহ</NavLink>
+                              </li>
+                              <li className='lg:mr-6 py-2 lg:py-0'>
+                                        <NavLink to="/support" className={({ isActive }) =>
+                                                  isActive ? "text-white glass py-3 px-8 rounded-md font-semibold flex justify-center items-center" : "py-4 px-8 rounded-xl glass font-semibold hover:bg-primary hover:text-white duration-500 text-black flex justify-center items-center"
+                                        }>সাপোর্ট</NavLink>
                               </li>
                     </>
           )

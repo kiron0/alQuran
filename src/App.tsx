@@ -7,6 +7,8 @@ import AlQuran from './pages/AlQuran/AlQuran';
 import Surah from './pages/Surah/Surah';
 import Developer from './pages/Developer/Developer';
 import BottomNav from './shared/Navbar/BottomNav';
+import Hadith from './pages/Hadith/Hadith';
+import Support from './pages/Support/Support';
 
 const router = createBrowserRouter(
   [
@@ -31,11 +33,27 @@ const router = createBrowserRouter(
         </>,
     },
     {
+      path: "/hadith",
+      element:
+        <>
+          <BottomNav />
+          <Hadith />
+        </>,
+    },
+    {
       path: "/dev",
       element:
         <>
           <BottomNav />
           <Developer />
+        </>,
+    },
+    {
+      path: "/support",
+      element:
+        <>
+          <BottomNav />
+          <Support />
         </>,
     },
     {

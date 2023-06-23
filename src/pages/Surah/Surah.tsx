@@ -38,6 +38,7 @@ export default function Surah() {
                                                                                 <div key={surah.surahNo} className='flex flex-col'>
                                                                                           <p><span className='font-SutonnyMJ text-2xl md:text-3xl'>{surah.surahNo}</span>. {surah.surahName} ({surah.surahArName})</p>
                                                                                           <small>({surah.surahMeaning})</small>
+                                                                                          <small>আয়াত সংখ্যাঃ <span className='font-SutonnyMJ text-lg md:text-2xl'>{surah.totalVerses}</span></small>
                                                                                 </div>
                                                                       )
                                                             )
@@ -45,8 +46,30 @@ export default function Surah() {
                                         }
                               </h1>
                               <div className='flex justify-center items-center gap-5'>
-                                        <button onClick={() => navigate(-1)} className='glass py-2 px-4 flex items-center rounded-xl text-black mb-8 gap-1'><i className='bx bx-arrow-back text-xl'></i>Go Back</button>
+                                        <button onClick={() => navigate("/alQuran")} className='glass py-2 px-4 flex items-center rounded-xl text-black mb-8 gap-1'><i className='bx bx-arrow-back text-xl'></i>Go Back</button>
                                         <button onClick={() => navigate("/")} className='glass py-2 px-4 hidden md:flex items-center rounded-xl text-black mb-8 gap-1'><i className='bx bx-home-heart text-xl'></i>Go Home</button>
+                              </div>
+                              <div className='glass duration-500 py-3 mb-5 rounded-xl flex flex-col gap-5 justify-center items-center md:px-0 w-[93%] md:w-1/3 lg:w-1/5 mx-auto'>
+                                        <select className="select w-full max-w-sm border-none focus:outline-none font-SutonnyMJ" onChange={(e) => navigate(`/alQuran/${e.target.value}`)}>
+                                                  {
+                                                            alQuran.map((surah, index) => {
+                                                                      return (
+                                                                                surah.surahNo === surahNumber && (
+                                                                                          <option key={index} value={surah.surahNo} selected>{surah.surahNo}. {surah.surahName} ({surah.surahArName})</option>
+                                                                                )
+                                                                      )
+                                                            }
+                                                            )
+                                                  }
+                                                  {
+                                                            alQuran.map((surah, index) => {
+                                                                      return (
+                                                                                <option key={index} value={surah.surahNo}>{surah.surahNo}. {surah.surahName} ({surah.surahArName})</option>
+                                                                      )
+                                                            }
+                                                            )
+                                                  }
+                                        </select>
                               </div>
                               {
                                         alQuran.map((surah, index) => {
